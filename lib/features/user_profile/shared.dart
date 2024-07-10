@@ -1,0 +1,1 @@
+export 'shared/user_profile.providers.dart';

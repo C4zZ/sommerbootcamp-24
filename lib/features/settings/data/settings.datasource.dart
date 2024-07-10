@@ -1,0 +1,2 @@
+/// SettingsDatasource
+abstract class SettingsDatasource {}

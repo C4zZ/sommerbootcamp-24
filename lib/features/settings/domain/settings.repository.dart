@@ -1,0 +1,2 @@
+/// SettingsRepository
+abstract class SettingsRepository {}

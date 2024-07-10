@@ -1,0 +1,2 @@
+/// SchoolRepository
+abstract class ProductSelectionRepository {}

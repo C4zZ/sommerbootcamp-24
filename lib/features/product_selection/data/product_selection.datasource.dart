@@ -1,0 +1,2 @@
+/// SchoolDatasource
+abstract class ProductSelectionDatasource {}

@@ -1,0 +1,1 @@
+export 'shared/shopping_cart.providers.dart';
