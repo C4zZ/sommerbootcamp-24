@@ -5,9 +5,11 @@
 *.swp
 .DS_Store
 .atom/
+.build/
 .buildlog/
 .history
 .svn/
+.swiftpm/
 migrate_working_dir/
 
 # IntelliJ related
@@ -54,3 +56,5 @@ ios-export-options.plist
 
 *.freezed.dart
 *.g.dart
+/android/app/.gradle/config.properties
+/android/app/local.properties
