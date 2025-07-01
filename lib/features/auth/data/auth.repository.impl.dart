@@ -48,7 +48,7 @@ class AuthRepositoryImpl implements AuthRepository {
     required String password,
   }) async {
     try {
-      _currentSession = await appwriteClient.account.createEmailSession(
+      _currentSession = await appwriteClient.account.createEmailPasswordSession(
         email: email,
         password: password,
       );
