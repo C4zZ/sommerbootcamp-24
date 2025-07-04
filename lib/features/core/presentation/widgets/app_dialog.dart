@@ -68,13 +68,14 @@ class AppDialog {
     }
   }
 
-  static Future<void> showInformationDialog(
-      {required BuildContext dialogContext,
-      String? title,
-      String? content,
-      bool useRootNavigator = false,
-      List<Widget>? androidDialogActions,
-      List<Widget>? cupertinoDialogActions}) async {
+  static Future<void> showInformationDialog({
+    required BuildContext dialogContext,
+    String? title,
+    String? content,
+    bool useRootNavigator = false,
+    List<Widget>? androidDialogActions,
+    List<Widget>? cupertinoDialogActions,
+  }) async {
     final titleWidget = title != null ? Text(title) : null;
     final contentWidget = content != null ? Text(content) : null;
 

@@ -54,6 +54,7 @@ class AuthRepositoryImpl implements AuthRepository {
       );
     } catch (e) {
       debugPrint(e.toString());
+      rethrow;
     }
     await isUserAuthenticated();
   }

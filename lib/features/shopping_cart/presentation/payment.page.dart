@@ -245,7 +245,9 @@ class _PaymentPageState extends ConsumerState<PaymentPage> {
     // TODO(team): Prüfe ob der Nutzer eine Bezahlmethode ausgewählt hat. Wenn
     //  er keine Bezahlmethode ausgewählt hat, dann darf er keine Bestellung
     //  aufgeben. Zusätzlich soll ein Dialog angezeigt werden, der den Nutzer
-    //  darauf hinweist, dass er keine Bezahlmethode angegeben hat.
+    //  darauf hinweist, dass er keine Bezahlmethode angegeben hat. Schaue dir
+    //  hierzu die Klasse lib/features/core/presentation/widgets/app_dialog.dart
+    //  an
 
     setState(() {
       isPaymentProcessing = true;

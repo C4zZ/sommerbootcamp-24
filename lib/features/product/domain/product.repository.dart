@@ -34,8 +34,5 @@ abstract class ProductRepository {
   Future<Uint8List> getImage({
     required String bucketId,
     required String fileId,
-    int? width,
-    int? height,
-    int? quality,
   });
 }

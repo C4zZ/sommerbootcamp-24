@@ -26,12 +26,13 @@ class ProductRepositoryImpl implements ProductRepository {
     required String postId,
     required Uint8List image,
   }) async {
+    final fileId = _uuid.v1();
     final file = await appwriteClient.storage.createFile(
       bucketId: appwriteClient.imagesBucketId,
-      fileId: _uuid.v1(),
+      fileId: fileId,
       file: InputFile.fromBytes(
         bytes: image,
-        filename: postId,
+        filename: fileId,
       ),
     );
     return file.$id;
@@ -138,16 +139,10 @@ class ProductRepositoryImpl implements ProductRepository {
   Future<Uint8List> getImage({
     required String bucketId,
     required String fileId,
-    int? width,
-    int? height,
-    int? quality,
   }) async {
-    final image = await appwriteClient.storage.getFilePreview(
+    final image = await appwriteClient.storage.getFileView(
       bucketId: bucketId,
       fileId: fileId,
-      width: width,
-      height: height,
-      quality: quality,
     );
     return image;
   }

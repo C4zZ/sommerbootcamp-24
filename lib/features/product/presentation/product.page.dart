@@ -334,9 +334,7 @@ class _ProductPageState extends ConsumerState<ProductPage> {
             productName: _productNameTextController.text,
             productDescription: _productDescriptionTextController.text,
             accessoriesDescription: _productAccessoriesTextController.text,
-            productPrice: double.parse(
-              _productPriceTextController.text.replaceAll(',', '.'),
-            ),
+            productPrice: _parsePrice(),
             productImages: _productImages,
             accessoriesImages: _accessoriesImages,
           );
@@ -366,6 +364,12 @@ class _ProductPageState extends ConsumerState<ProductPage> {
         const Text('Produkt erfolgreich erstellt.'),
       );
     }
+  }
+
+  double _parsePrice() {
+    return double.parse(
+            _productPriceTextController.text.replaceAll(',', '.'),
+          );
   }
 
   void _clearFields() {

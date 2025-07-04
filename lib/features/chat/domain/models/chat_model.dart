@@ -9,7 +9,7 @@ part 'chat_model.g.dart';
 class ChatModel with _$ChatModel {
   /// Construct Chat Message Model
   factory ChatModel({
-    @JsonKey(name: r'$id') required String id,
+    @JsonKey(name: r'$id') String? id,
     @JsonKey(name: 'sender_id') required String senderId,
     @JsonKey(name: 'receiver_id') required String receiverId,
     required String message,

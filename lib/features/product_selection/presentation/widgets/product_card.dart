@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../product/domain/models/product_model.dart';
 import '../../shared.dart';
+import 'add_to_cart_action.dart';
 import 'image_gallery.dart';
 import 'like_action.dart';
 
@@ -78,6 +79,10 @@ class ProductCard extends ConsumerWidget {
                   const SizedBox(
                     height: 10,
                   ),
+                  // TODO(team): schaue dir die Klasse
+                  //  lib/features/product_selection/presentation/widgets/add_to_cart_action.dart
+                  //  an und versuche rauszufinden wie du diese nutzen kannst,
+                  //  um Artikel in den Warenkorb zu bekommen
                 ],
               ),
             )

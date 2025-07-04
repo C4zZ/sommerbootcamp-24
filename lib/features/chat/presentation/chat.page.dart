@@ -176,8 +176,10 @@ class _ContactListState extends ConsumerState<_ContactList> {
 
     return FutureBuilder<List<UserProfileModel>>(
       future: userProfileRepository.getProfileList(),
-      builder: (BuildContext fbContext,
-          AsyncSnapshot<List<UserProfileModel>> snapshot) {
+      builder: (
+          BuildContext fbContext,
+          AsyncSnapshot<List<UserProfileModel>> snapshot,
+          ) {
         if (snapshot.hasData) {
           return SingleChildScrollView(
             child: Column(

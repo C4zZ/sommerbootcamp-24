@@ -143,13 +143,6 @@ class _ImageSelectorState extends State<ImageSelector> {
 
     // Option D
     // final image = await widget._picker.pickImage(
-    //   source: ImageSource.camera,
-    // );
-    // final imageBytes = await image?.readAsBytes();
-    // widget.onImagePickedFromCamera(imageBytes!);
-
-    // Option E
-    // final image = await widget._picker.pickImage(
     //   source: ImageSource.camera.knips(),
     // );
     // final imageBytes = await image?.readAsBytes();
